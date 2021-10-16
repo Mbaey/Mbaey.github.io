@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>智能感知交互lib</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/bcmi-base.css" 	rel="stylesheet">
+
+	<!-- Fav and touch icons -->
+	<link rel="shortcut icon" href="img/bcmi-logo-64x64.png">
+
+	<script stype="text/javascript">
+		window.onload = function () {
+			var nav = document.getElementById("nav");
+			// var navfixed = document.getElementById("navfixed");
+			var sidenav = document.getElementById("sidenav");
+			var sidenavfixed = document.getElementById("sidenavfixed");
+			window.onscroll = function () {
+				var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				if (scrollTop > nav.offsetTop) {
+					// navfixed.style.display = "block";
+					sidenav.style.visibility = "hidden";
+					sidenavfixed.style.display = "block";
+				} else if (scrollTop < nav.offsetTop) {
+					// navfixed.style.display = "none";
+					sidenav.style.visibility = "visible";
+					sidenavfixed.style.display = "none";
+				}
+			}
+		}
+	</script>
+</head>
+
+<body style="font-family: '微软雅黑';">
+	<div class="container" style="max-width: 1000px;">
+		<div class="masthead">
+			<!-- <div class="row-fluid">
+				<div class="span10">
+					<img class="bcmi-logo" src="img/bcmi.logo.small.png" alt="" />
+				</div>
+				<div class="span2">
+					<div class="btn-group">
+						<button class="btn btn"
+							onclick="window.location.href='index.html'">English</button>
+						<button class="btn btn btn-inverse disabled">中文</button>
+					</div>
+				</div>
+			</div> -->
+			<div class="navbar" id="nav">
+				<div class="navbar-inner">
+					<div class="container">
+						<ul class="nav">
+							<li class="nav-link"><a href="index.html">关于我们</a></li>
+							<li class="nav-link"><a href="research.html">研究领域</a></li>
+							<li class="nav-link"><a href="member.html">人员组成</a></li>
+							<li class="nav-link active"><a href="resource.html">资源</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- /.navbar -->
+		</div>
+
+
+
+		<div class="row-fluid">
+			<div class="span3">
+				<!-- side nav bar fixed-->
+				<div id="sidenavfixed" class="well sidebar-nav affix sidenavfixed bs-docs-sidebar"
+					style="display:none">
+					<ul class="nav nav-list">
+						<li class="nav-header">资源</li>
+						<li class="active"><a href="#datasets">数据集</a></li>
+						<li><a href="#tutorials">教程&课程</a></li>
+						<li><a href="#design">设计资源</a></li>
+						<li><a href="#links">链接</a></li>
+					</ul>
+				</div>
+				<!-- side nav bar-->
+				<div id="sidenav" class="well sidebar-nav bs-docs-sidebar">
+					<ul class="nav nav-list">
+						<li class="nav-header">资源</li>
+						<li class="active"><a href="#datasets">数据集</a></li>
+						<li><a href="#tutorials">教程&课程</a></li>
+						<li><a href="#design">设计资源</a></li>
+						<li><a href="#links">链接</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="span9">
+				<!--data sets-->
+				<h3 id="datasets">数据集</h3>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>名称</th>
+							<th>大小</th>
+							<th>描述</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td>confuse.zip<br>(<a
+									href="#">下载</a>)
+							</td>
+							<td>1.8GB</td>
+							<td>基于EEG信号的困惑情绪识别数据集</td>
+						</tr>
+						<tr>
+							<td>lidf.zip<br>(<a
+									href="assets/download/lidf.zip">Download</a>)
+							</td>
+							<td>27.3MB</td>
+							<td>眼动数据集</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--datasets End-->
+				<!--tutorial sets-->
+				<h3 id="tutorials">教程&课程</h3>
+				<ul>
+					<li>
+						<a target="_blank"
+							href="http://bcmi.sjtu.edu.cn/~zhaohai/ptm2012/"><strong>[课程]</strong>Python程序设计</a>
+						<p>This course will provide a gentle, yet intense, introduction to
+							programming using Python for highly motivated students with
+							little or no prior experience in programming. The course will
+							focus on planning and organizing programs, as well as the
+							grammar of the Python programming language. The course is
+							designed to help prepare students for 6.01 Introduction to EECS
+							I. 6.01 assumes some knowledge of Python upon entering; the
+							course material for 6.189 has been specially designed to make
+							sure that concepts important to 6.01 are covered. This course is
+							offered during the Independent Activities Period (IAP), which is
+							a special 4-week term at MIT that runs from the first week of
+							January until the end of the month.
+						</p>
+					</li>
+					<li>
+						<a target="_blank"
+							href="http://bcmi.sjtu.edu.cn/~zhaohai/ptm2012/"><strong>[课程]</strong>Python程序设计</a>
+						<p>This course will provide a gentle, yet intense, introduction to
+							programming using Python for highly motivated students with
+							little or no prior experience in programming. The course will
+							focus on planning and organizing programs, as well as the
+							grammar of the Python programming language. The course is
+							designed to help prepare students for 6.01 Introduction to EECS
+							I. 6.01 assumes some knowledge of Python upon entering; the
+							course material for 6.189 has been specially designed to make
+							sure that concepts important to 6.01 are covered. This course is
+							offered during the Independent Activities Period (IAP), which is
+							a special 4-week term at MIT that runs from the first week of
+							January until the end of the month.
+						</p>
+					</li>
+					<li>
+						<a target="_blank"
+							href="http://bcmi.sjtu.edu.cn/~zhaohai/ptm2012/"><strong>[课程]</strong>Python程序设计</a>
+						<p>This course will provide a gentle, yet intense, introduction to
+							programming using Python for highly motivated students with
+							little or no prior experience in programming. The course will
+							focus on planning and organizing programs, as well as the
+							grammar of the Python programming language. The course is
+							designed to help prepare students for 6.01 Introduction to EECS
+							I. 6.01 assumes some knowledge of Python upon entering; the
+							course material for 6.189 has been specially designed to make
+							sure that concepts important to 6.01 are covered. This course is
+							offered during the Independent Activities Period (IAP), which is
+							a special 4-week term at MIT that runs from the first week of
+							January until the end of the month.
+						</p>
+					</li>
+					<li>
+						<a target="_blank"
+							href="http://bcmi.sjtu.edu.cn/~zhaohai/ptm2012/"><strong>[课程]</strong>Python程序设计</a>
+						<p>This course will provide a gentle, yet intense, introduction to
+							programming using Python for highly motivated students with
+							little or no prior experience in programming. The course will
+							focus on planning and organizing programs, as well as the
+							grammar of the Python programming language. The course is
+							designed to help prepare students for 6.01 Introduction to EECS
+							I. 6.01 assumes some knowledge of Python upon entering; the
+							course material for 6.189 has been specially designed to make
+							sure that concepts important to 6.01 are covered. This course is
+							offered during the Independent Activities Period (IAP), which is
+							a special 4-week term at MIT that runs from the first week of
+							January until the end of the month.
+						</p>
+					</li>
+					
+				</ul>
+				<!--tutorial End-->
+
+				<h3 id="design">设计资源</h3>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>名称</th>
+							<th>大小</th>
+							<th>描述</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>PPT模板2013V1<br>(<a
+									href="resource/BCMI_PPT_2013_1.zip">Download</a>)
+							</td>
+							<td>2.09MB</td>
+							<td>2013年BCMI实验室PPT幻灯片模板，蓝色风格，适用于演讲、讲座、答辩等。使用前请更改幻灯片母版的标题与作者。设计：杜若飞。
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+
+				<!--links-->
+				<h3 id="links">链接</h3>
+				<ul>
+					<li><a href="http://vision.stanford.edu/" target="_blank">Stanford Vision
+							Lab</a> </li>
+					
+				</ul>
+				<!--links End-->
+			</div>
+
+		</div>
+
+	</div>
+
+	<hr>
+
+	<div class="footer container">
+		<div class="row">
+			<div class="col-md-6" style="display: flex;
+			justify-content: center;
+			align-items: center;">
+				<p>Center for Brain-Like Computing and Machine Intelligence</p>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6" style="display: flex;
+			justify-content: center;
+			align-items: center;">
+
+				<p>All Rights Reserved &copy; 2021</p>
+			</div>
+		</div>
+
+	</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+
+</html>
